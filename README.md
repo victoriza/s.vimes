@@ -9,16 +9,22 @@ docker-compose run --rm nightwatch
 
 A screenshot of the test will be stored in `test/screenshots`.  
 A video of the test will be stored in `test/videos`.  
-
-Video recording is done with
-[nightwatch-video-recorder](https://github.com/blueimp/nightwatch-video-recorder).
-
-The VNC password can be changed via `VNC_PASSWORD` environment variable for the
-chromedriver container.
+A Nightwatch log will be shown on the console.
 
 Stop and remove the docker-compose container set:
 ```sh
 docker-compose down -v
+```
+
+## FAQ
+
+### Permission denied for videos/screenshots folders
+If you get a permission error for the videos/screenshots folders, make sure they
+are writable for the nightwatch process:
+
+```sh
+mkdir -p test/screenshots test/videos
+chmod 777 test/screenshots test/videos
 ```
 
 Credits
