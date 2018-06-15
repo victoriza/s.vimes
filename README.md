@@ -20,8 +20,8 @@ docker-compose down -v
 
 ### Some Example tests failed
 There are two provided tests:
-app-success-example.js (that points to the app)    OK
-google-fail-example.js (that points to google.com) KO
+app-success-example.js (that points to the app)    OK  
+google-fail-example.js (that points to google.com) KO  
 It's a test from http://nightwatchjs.org/ for an "old" version of Google, it shows how nicely you spot a broken functionality.
 
 ### Permission denied for videos/screenshots folders
@@ -37,3 +37,10 @@ Credits
 -------
 Originally cloned and inspired by 
 https://blueimp.net/
+
+Headless Chrome Project
+https://developers.google.com/web/updates/2017/04/headless-chrome
+
+Nightwatch.js Project
+http://nightwatchjs.org/
+
