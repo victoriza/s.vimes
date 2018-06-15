@@ -18,6 +18,12 @@ docker-compose down -v
 
 ## FAQ
 
+### Some Example tests failed
+There are two provided tests:
+app-success-example.js (that points to the app)    OK
+google-fail-example.js (that points to google.com) KO
+It's a test from http://nightwatchjs.org/ for an "old" version of Google, it shows how nicely you spot a broken functionality.
+
 ### Permission denied for videos/screenshots folders
 If you get a permission error for the videos/screenshots folders, make sure they
 are writable for the nightwatch process:
